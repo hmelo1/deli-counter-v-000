@@ -13,11 +13,13 @@ def line(queue)
 end
 
 def take_a_number(queue, customer)
-  queue.push(customer)
+  #queue.push(customer)
+  queue << customer
   puts "Welcome, #{customer}. You are number #{queue.index(customer) + 1} in line."
 end
 
 def now_serving(queue)
+  #if queue.length == 0
   if queue.empty?
     puts "There is nobody waiting to be served!"
   else
