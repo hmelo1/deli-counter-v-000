@@ -18,7 +18,7 @@ def take_a_number(queue, customer)
 end
 
 def now_serving(queue)
-  if queue.length == 0
+  if queue.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{queue.first}."
